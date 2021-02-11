@@ -1,8 +1,8 @@
-## AWS Bookstore Demo App
+## AWS Vinyl Demo App
 
-AWS Bookstore Demo App is a full-stack sample web application that creates a storefront (and backend) for customers to shop for fictitious books. The entire application can be created with a single CloudFormation template. **[Try out the deployed application here](https://d2h3ljlsmzojxz.cloudfront.net/)**!
+AWS Vinylstore Demo App is a full-stack sample web application that creates a storefront (and backend) for customers to shop for fictitious vinyls. The entire application can be created with a single CloudFormation template. **[Try out the deployed application here](https://d2h3ljlsmzojxz.cloudfront.net/)**!
 
-You can browse and search for books, look at recommendations and best sellers, manage your cart, checkout, view your orders, and more.  Get started with building your own below!
+You can browse and search for vinyls, look at recommendations and best sellers, manage your cart, checkout, view your orders, and more.  Get started with building your own below!
 &nbsp;
 
 ## License Summary
@@ -41,16 +41,16 @@ This sample code is made available under a modified MIT license. See the LICENSE
 
 ## Overview
 
-The goal of AWS Bookstore Demo App is to provide a fully-functional web application that utilizes multiple purpose-built AWS databases and native AWS components like Amazon API Gateway and AWS CodePipeline. Increasingly, modern web apps are built using a multitude of different databases. Developers break their large applications into individual components and select the best database for each job. Let's consider AWS Bookstore Demo App as an example. The app contains multiple experiences such a shopping cart, product search, recommendations, and a top sellers list. For each of these use cases, the app makes use of a purpose-built database so the developer never has to compromise on functionality, performance, or scale. 
+The goal of AWS Vinyl Demo App is to provide a fully-functional web application that utilizes multiple purpose-built AWS databases and native AWS components like Amazon API Gateway and AWS CodePipeline. Increasingly, modern web apps are built using a multitude of different databases. Developers break their large applications into individual components and select the best database for each job. Let's consider AWS Vinyl Demo App as an example. The app contains multiple experiences such a shopping cart, product search, recommendations, and a top sellers list. For each of these use cases, the app makes use of a purpose-built database so the developer never has to compromise on functionality, performance, or scale. 
 
-The provided CloudFormation template automates the entire creation and deployment of AWS Bookstore Demo App.  The template includes the following components:
+The provided CloudFormation template automates the entire creation and deployment of AWS Vinyl Demo App.  The template includes the following components:
 
 **Database components**
 
 * Product catalog/shopping cart - Amazon DynamoDB offers fast, predictable performance for the key-value lookups needed in the product catalog, as well as the shopping cart and order history.  In this implementation, we have unique identifiers, titles, descriptions, quantities, locations, and price.
 * Search - Amazon Elasticsearch Service enables full-text search for our storefront, enabling users to find products based on a variety of terms including author, title, and category.
 * Recommendations - Amazon Neptune provides social recommendations based on what user's friends have purchased, scaling as the storefront grows with more products, pages, and users.
-* Top sellers list - Amazon ElastiCache for Redis reads order information from Amazon DynamoDB Streams, creating a leaderboard of the “Top 20” purchased or rated books.
+* Top sellers list - Amazon ElastiCache for Redis reads order information from Amazon DynamoDB Streams, creating a leaderboard of the “Top 20” purchased or rated vinyls.
 
 **Application components**
 
@@ -62,9 +62,9 @@ The provided CloudFormation template automates the entire creation and deploymen
 * Continuous deployment code pipeline – AWS CodePipeline and AWS CodeBuild help you build, test, and release your application code. 
 * Serverless web application – Amazon CloudFront and Amazon S3 provide a globally-distributed application. 
 
-You can choose to customize the template to create your own bookstore, modify it to make a different type of store, or change it to make a completely different type of web application.  
+You can choose to customize the template to create your own Vinyl, modify it to make a different type of store, or change it to make a completely different type of web application.  
 
-AWS Bookstore Demo App is built on-top of **[AWS Full-Stack Template](https://github.com/awslabs/aws-full-stack-template)**, which provides the foundational services, components, and plumbing needed to get a basic web application up and running. Users can build on top of AWS Full-Stack Template to create any application they envision, whether a travel booking tool, a blog, or another web app.  This AWS Bookstore Demo App is just one example of what you can create using AWS Full-Stack Template. 
+AWS Vinyl Demo App is built on-top of **[AWS Full-Stack Template](https://github.com/awslabs/aws-full-stack-template)**, which provides the foundational services, components, and plumbing needed to get a basic web application up and running. Users can build on top of AWS Full-Stack Template to create any application they envision, whether a travel booking tool, a blog, or another web app.  This AWS Vinyl Demo App is just one example of what you can create using AWS Full-Stack Template. 
 
 Watch the recorded talk and demo [here](https://youtu.be/-pb-DkD6cWg?t=1309). 
 &nbsp;
@@ -81,11 +81,11 @@ Watch the recorded talk and demo [here](https://youtu.be/-pb-DkD6cWg?t=1309).
 
 ### Getting started
 
-To get AWS Bookstore Demo App up and running in your own AWS account, follow these steps (if you do not have an AWS account, please see [How do I create and activate a new Amazon Web Services account?](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)):
+To get AWS Vinyl Demo App up and running in your own AWS account, follow these steps (if you do not have an AWS account, please see [How do I create and activate a new Amazon Web Services account?](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)):
 
 1. Log into the [AWS console](https://console.aws.amazon.com/) if you are not already.  
 *Note: If you are logged in as an IAM user, ensure your account has permissions to create and manage the necessary resources and components for this application.* 
-2. Choose one of the **Launch Stack** buttons below for your desired AWS region to open the AWS CloudFormation console and create a new stack. AWS Bookstore Demo App is supported in the following regions:
+2. Choose one of the **Launch Stack** buttons below for your desired AWS region to open the AWS CloudFormation console and create a new stack. AWS Vinyl Demo App is supported in the following regions:
 
 Region name | Region code | Launch
 --- | --- | ---
